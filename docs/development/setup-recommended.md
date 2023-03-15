@@ -953,6 +953,10 @@ vagrant reload
 vagrant reload --provision
 ```
 
+#### Vagrant received unknown output from `docker build` while building a container:  #1 [internal] load .dockerignore
+
+If receiving this error on an Apple Silicon (M1/M2) Mac when running `vagrant up --provider=docker`, try disabling Rosetta in Docker, as well as any beta or experimental features.
+
 ### Specifying an Ubuntu mirror
 
 Bringing up a development environment for the first time involves
